@@ -1,0 +1,11 @@
+@if(productResource.isLoading()) {
+<div class="flex justify-center items-center h-screen">
+  <span class="loading loading-spinner loading-lg text-primary"></span>
+</div>
+} @else if(productResource.value()?.[0]) {
+<app-hero-section [about]="productResource.value()![0].about" />
+<app-experience-section [experiencia]="productResource.value()![0].experiencia" />
+<app-projects-section [proyectos]="productResource.value()![0].proyectos" />
+<app-skills-section [habilidades]="productResource.value()![0].habilidades" />
+<app-education-section [educacion]="productResource.value()![0].educacion" />
+}

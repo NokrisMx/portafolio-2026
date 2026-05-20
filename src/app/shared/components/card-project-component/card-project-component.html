@@ -1,0 +1,35 @@
+<div class="h-full card bg-base-200 rounded-sm overflow-hidden group w-full shadow-md">
+  <figure class="overflow-hidden h-48 sm:h-56 lg:h-64">
+    <img alt="{{ proyectos().nombre }}"
+      class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+      [src]="proyectos().image" />
+  </figure>
+  <div class="card-body p-5 sm:p-6 flex flex-col">
+    <div class="flex flex-wrap gap-2">
+      @for(tecnologia of proyectos().tecnologias; track tecnologia) {
+      <span class="badge badge-success badge-outline font-bold text-[10px] uppercase tracking-widest rounded-sm">
+        {{ tecnologia }}
+      </span>
+      }
+    </div>
+    <h2 class="card-title text-lg sm:text-xl lg:text-2xl font-bold font-headline mt-2">
+      {{ proyectos().nombre }}
+    </h2>
+    <p class="text-base-content/70 text-sm sm:text-base grow-0 line-clamp-3">
+      {{ proyectos().descripcion }}
+    </p>
+    <div class="card-actions mt-auto pt-2">
+      <a href="{{ proyectos().demo }}" target="_blank"
+        class="btn btn-success btn-sm gap-2 group-hover:translate-x-2 transition-transform">
+        Ver Proyecto
+        <i class="pi pi-arrow-right"></i>
+      </a>
+
+      <a href="{{ proyectos().github }}" target="_blank"
+        class="btn btn-success btn-sm gap-2 group-hover:translate-x-2 transition-transform">
+        Ver Código
+        <i class="pi pi-github"></i>
+      </a>
+    </div>
+  </div>
+</div>

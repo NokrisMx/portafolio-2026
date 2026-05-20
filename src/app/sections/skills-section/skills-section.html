@@ -1,0 +1,18 @@
+<!-- Skills Section -->
+<section class="py-26 px-6 bg-surface-container-low" id="skills">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold tracking-tight text-on-surface">Habilidades Técnicas</h2>
+      <p class="text-on-surface-variant mt-4">Herramientas de elección para arquitecturar productos digitales.</p>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      @for(habilidad of habilidades(); track habilidad.nombre) {
+      <div
+        class="bg-surface-container-lowest p-6 rounded-xl flex flex-col items-center gap-3 transition-transform hover:-translate-y-1">
+        <hugeicons-icon [icon]="getIcon(habilidad.icono)" class="text-on-surface-variant" [strokeWidth]="1.5" />
+        <span class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">{{ habilidad.nombre }}</span>
+      </div>
+      }
+    </div>
+  </div>
+</section>

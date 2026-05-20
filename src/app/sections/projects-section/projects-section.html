@@ -1,0 +1,13 @@
+<section class="py-26 px-6 max-w-7xl mx-auto" id="projects">
+  <div class="mb-16">
+    <span class="text-primary font-bold tracking-widest text-xs uppercase mb-2 block">Trayectoria autodidacta</span>
+    <h2 class="text-4xl font-bold tracking-tight text-on-surface">Proyectos Personales</h2>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-stretch">
+    @for(proyecto of proyectos(); track proyecto.nombre) {
+    <app-card-project-component [proyectos]="proyecto" />
+    }
+  </div>
+
+</section>

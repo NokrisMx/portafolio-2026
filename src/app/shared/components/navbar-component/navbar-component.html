@@ -1,0 +1,82 @@
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+  <div class="navbar max-w-7xl mx-auto px-6 h-16">
+
+    <!-- LEFT -->
+    <div class="navbar-start">
+      <!-- LOGO -->
+      <a routerLink="/" class="text-xl font-black tracking-tighter text-slate-900 uppercase ml-2">
+        Portafolio <span class="text-teal-600 italic">AGM</span>
+      </a>
+    </div>
+
+    <!-- DESKTOP MENU -->
+    <div class="navbar-center hidden md:flex">
+      <ul class="menu menu-horizontal gap-6 px-1">
+
+        <li>
+          <a href="#experience" class="text-slate-600 hover:text-teal-600 text-sm tracking-tight">
+            Experiencia
+          </a>
+        </li>
+
+        <li>
+          <a href="#projects" class="text-slate-600 hover:text-teal-600 text-sm tracking-tight">
+            Proyectos
+          </a>
+        </li>
+
+        <li>
+          <a href="#skills" class="text-slate-600 hover:text-teal-600 text-sm tracking-tight">
+            Habilidades
+          </a>
+        </li>
+
+        <li>
+          <a href="#education" class="text-slate-600 hover:text-teal-600 text-sm tracking-tight">
+            Educación
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="navbar-end">
+      <!-- MOBILE MENU -->
+      <div class="dropdown dropdown-end">
+        <div tabindex="0" role="button" class="md:hidden cursor-pointer">
+          <i class="pi pi-bars text-slate-700"></i>
+        </div>
+
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-4 shadow-lg bg-white rounded-xl w-56 gap-2 z-50">
+
+          <li class="w-fit">
+            <a href="#experience" class="text-slate-700">Experiencia</a>
+          </li>
+          <li class="w-fit">
+            <a href="#projects" class="text-slate-700">Proyectos</a>
+          </li>
+          <li class="w-fit">
+            <a href="#skills" class="text-slate-700">Habilidades</a>
+          </li>
+          <li class="w-fit">
+            <a href="#education" class="text-slate-700">Educación</a>
+          </li>
+
+          <li class="w-fit">
+            <a href="https://wa.me/5218126007542?text=Hola,%20me%20interesa%20contactarte" target="_blank"
+              class="w-auto bg-teal-600 text-white py-2 px-3 rounded-lg text-sm font-semibold flex flex-row items-center gap-2">
+              Contacto <i class="pi pi-whatsapp"></i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+      <a href="https://wa.me/5218126007542?text=Hola,%20me%20interesa%20contactarte" target="_blank"
+        class="bg-teal-600 text-white px-5 py-2 rounded-xl text-sm font-semibold active:scale-95 transition-transform hidden md:flex flex-row items-center gap-2">
+        Contacto <i class="pi pi-whatsapp"></i>
+      </a>
+    </div>
+
+  </div>
+</nav>

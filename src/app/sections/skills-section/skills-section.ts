@@ -10,10 +10,10 @@ import {
   TailwindcssIcon,
   FigmaIcon,
   TriangleIcon,
-  Rocket01Icon,
-  SmartPhone02Icon,
+  Typescript01Icon,
   DatabaseIcon,
   Settings01Icon,
+  ApiIcon,
 } from '@hugeicons/core-free-icons';
 import { Habilidades } from './../../core/interfaces/portfolio-interface';
 
@@ -36,9 +36,9 @@ export class SkillsSection {
     TailwindcssIcon: TailwindcssIcon,
     FigmaIcon: FigmaIcon,
     TriangleIcon: TriangleIcon,
-    Rocket01Icon: Rocket01Icon,
-    SmartPhone02Icon: SmartPhone02Icon,
+    Typescript01Icon: Typescript01Icon,
     DatabaseIcon: DatabaseIcon,
+    ApiIcon: ApiIcon,
   };
 
   getIcon(icono: string): IconSvgObject {

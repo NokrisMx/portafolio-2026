@@ -16,6 +16,7 @@ export interface Educacion {
 
 export interface Experiencia {
   empresa: string;
+  url: string;
   logo: string;
   puesto: string;
   descripcion: string;
